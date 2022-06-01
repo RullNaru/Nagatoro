@@ -4,10 +4,10 @@ import { watchFile, unwatchFile } from 'fs'
 import moment from 'moment-timezone'
 
 global.owner = [
-  ['+1 760-891-4335'],
-  ['+62 852-7282-1627'],
-  ['17608914335', 'Papah-Chan', true],
-  ['6285272821627', 'Moca', true]
+  ['+6285859047172'],
+  ['+6285859047172'],
+  ['6285859047172', 'Rull', true],
+  ['6285859047172', 'Rull', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -96,8 +96,8 @@ global.htjava = '⫹⫺' //hiasan Doang :v
 global.hsquere = '⛶', '❏', '⫹⫺'
 
 // Sticker WM
-global.packname = ''
-global.author = ''
+global.packname = 'NagatoroBot'
+global.author = 'By NagatoroBot'
 
 global.multiplier = 69 // The higher, The harder levelup
 
