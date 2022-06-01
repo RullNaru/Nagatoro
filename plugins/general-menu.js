@@ -35,6 +35,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
         setTimeout(resolve, 1000)
       }) * 1000
     }
+      let vn = './media/tante-tante.mp3'
     let uptime = clockString(_uptime)
     let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(plugin => {
       return {
@@ -84,7 +85,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     // const pp = await conn.profilePictureUrl(conn.user.jid, 'image').catch(_ => './src/avatar_contact.png')
     // if (m.isGroup) return conn.sendButton(m.chat, text.trim(), conn.getName(conn.user.jid), pp, [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], m)
-    conn.sendHydrated(m.chat, text.trim(), '                「 𝙽𝚊𝚐𝚊𝚝𝚘𝚛𝚘 𝙱𝚘𝚝 あ⁩ 」', await genProfile(conn, m), 'https://chat.whatsapp.com/ESXOhW5UVx76XhnBnkfufQ', 'Grub Wa', null, null, [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], m)
+    conn.sendHydrated(m.chat, text.trim(), '                「 ```Nagatoro``` 」', await genProfile(conn, m), 'https://nekopoi.care', 'NagatoroBot', null, null, [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], m)
       conn.sendFile(m.chat, vn, 'dj1.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true 
