@@ -10,4 +10,6 @@ handler.help = handler.alias = ['waifu','neko']
 handler.tags = ['weebs']
 handler.command = /^(waifu|neko)$/i
 
+handler.private = true
+
 export default handler
