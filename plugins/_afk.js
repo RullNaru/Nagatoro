@@ -22,6 +22,10 @@ export function before(m) {
   Dia sedang AFK ${reason ? 'dengan alasan ' + reason : 'tanpa alasan'}
   Selama ${(new Date - afkTime).toTimeString()}
   `.trim())
+handler.help = handler.alias = ['afk']
+handler.tags = ['main']
+handler.command = /^(afk)$/i
+
     }
     return true
 }
