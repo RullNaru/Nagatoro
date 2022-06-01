@@ -11,6 +11,8 @@ handler.help = ['loli']
 handler.tags = ['weebs']
 handler.command = /^(loli)$/i
 
+handler.private = true
+
 export default handler
 
 async function shortUrl(url) {
